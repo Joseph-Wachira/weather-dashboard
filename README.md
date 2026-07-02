@@ -1,16 +1,35 @@
-# React + Vite
+# Weather Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A beautiful, responsive weather dashboard built with React, Vite, Tailwind CSS, and OpenWeatherMap API. Features dynamic backgrounds, 5-day forecast, search history, and smooth animations.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Search any city worldwide
+- Current weather (temperature, feels like, humidity, wind, pressure)
+- Sunrise and sunset times
+- 5-day forecast with min/max temperatures
+- Recent search history (stored in localStorage)
+- Loading spinner and error handling
+- Dynamic backgrounds based on weather (clear, clouds, rain, snow, thunderstorm, mist, night)
+- Fully responsive design
+- Glassmorphism UI with framer-motion animations
 
-## React Compiler
+## Screenshots
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+<!-- Add screenshots here after deployment -->
 
-## Expanding the Oxlint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- React + Vite
+- Tailwind CSS
+- Axios
+- React Icons
+- Framer Motion
+- OpenWeatherMap API
+
+## Installation
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/your-username/weather-dashboard.git
+   cd weather-dashboard
