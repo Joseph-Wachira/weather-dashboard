@@ -1,0 +1,58 @@
+.bg-clear {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+.bg-clouds {
+  background: linear-gradient(135deg, #bdc3c7 0%, #2c3e50 100%);
+}
+.bg-rain {
+  background: linear-gradient(135deg, #373b44 0%, #4286f4 100%);
+  animation: rain 0.3s linear infinite;
+}
+.bg-drizzle {
+  background: linear-gradient(135deg, #89a9c2 0%, #5b7fa5 100%);
+}
+.bg-thunderstorm {
+  background: linear-gradient(135deg, #2c003e 0%, #6a0572 100%);
+  animation: thunder 1.5s infinite;
+}
+.bg-snow {
+  background: linear-gradient(135deg, #e6dada 0%, #274046 100%);
+}
+.bg-mist {
+  background: linear-gradient(135deg, #a6c0fe 0%, #f68084 100%);
+  backdrop-filter: blur(20px);
+}
+.bg-night {
+  background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+  position: relative;
+}
+.bg-night::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(2px 2px at 20px 30px, #eee, transparent),
+              radial-gradient(2px 2px at 40px 70px, #fff, transparent),
+              radial-gradient(1px 1px at 90px 40px, #ddd, transparent);
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  animation: stars 60s linear infinite;
+}
+
+@keyframes rain {
+  0% { background-position: 0 0; }
+  100% { background-position: -20px 100px; }
+}
+@keyframes thunder {
+  0%, 100% { opacity: 1; }
+  10% { opacity: 0.8; }
+  20% { opacity: 1; }
+  50% { opacity: 0.7; }
+  60% { opacity: 1; }
+}
+@keyframes stars {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
